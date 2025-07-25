@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Annotate the function's parameters 
+Annotate the function's parameters
 and return values with appropriate types
 """
 from typing import Iterable, Sequence, List, Tuple
