@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Module that defines task_wait_n - executes task_wait_random n times concurrently
+Module that defines task_wait_n
+executes task_wait_random n times concurrently
 """
 import asyncio
 from typing import List
