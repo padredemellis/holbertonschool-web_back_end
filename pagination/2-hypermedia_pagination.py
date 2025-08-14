@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
+'''
+Implementation excercise two
+'''
 
 import csv
 import math
 from typing import List, Dict
+
 
 def index_range(page: int, page_size: int) -> tuple:
     """
@@ -18,6 +22,7 @@ def index_range(page: int, page_size: int) -> tuple:
     start_index = (page - 1) * page_size
     end_index = page * page_size
     return (start_index, end_index)
+
 
 class Server:
     """Server class to paginate a database of popular baby names."""
@@ -46,7 +51,8 @@ class Server:
             page_size (int): The number of items per page (default is 10).
 
         Returns:
-            List[List]: The requested page of data or empty list if out of range.
+            List[List]: The requested page of
+            data or empty list if out of range.
         """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
@@ -71,7 +77,7 @@ class Server:
         """
         page_data = self.get_page(page, page_size)
         total_pages = math.ceil(len(self.dataset()) / page_size)
-        
+
         return {
             'page_size': len(page_data),
             'page': page,
