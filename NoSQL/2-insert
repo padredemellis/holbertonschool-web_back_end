@@ -1,2 +1,2 @@
-// Insert docmument
-db.school.insertOne( {"name": "Holberton School"})
+// my comment
+db.school.insert({"name": "Holberton school"})
