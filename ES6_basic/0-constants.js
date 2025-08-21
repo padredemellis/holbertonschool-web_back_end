@@ -13,8 +13,9 @@
  * @returns {string} The string "I prefer const when I can."
  */
 export function taskFirst() {
-  const task = 'I prefer const when I can.';
-  return task;
+    var task;
+    const task = 'I prefer const when I can.';
+    return task;
 }
 
 /**
@@ -33,8 +34,9 @@ export function getLast() {
  * @returns {string} The combined string "But sometimes let is okay".
  */
 export function taskNext() {
-  let combination = 'But sometimes let';
-  combination += getLast();
+    var combination;
+    let combination = 'But sometimes let';
+    combination += getLast();
 
   return combination;
 }
