@@ -5,7 +5,7 @@ export default class Car {
     this._color = color;
   }
 
-  // Define un getter estático para Symbol.species que devuelva el constructor de la clase.
+  
   static get [Symbol.species]() {
     return this;
   }
