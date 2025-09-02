@@ -6,5 +6,14 @@ app = Flask(__name__)
 def home():
     return "Hello Flask"
 
+@app.route('/create-article')
+def create_article():
+    return 'Aqui podemos crear un articulo'
+
+@app.route('/article/<int:article_id>')
+def view_article(article_id):
+    return f'Estas viendo el articulo numero {article_id}'
+
+
 if __name__ == "__main__":
     app.run(debug = True)
