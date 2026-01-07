@@ -25,3 +25,11 @@ console.log(`Ultimo traje: ${personaje.trajes[personaje.trajes.length - 1]}`);
 const x = 'vivo';
 console.log(`Vivo: ${personaje[x]}`); 
 
+//Mas detalles
+
+//Como borrar una propiedad?
+delete personaje['edad'];
+console.log(personaje);
+
+const entriesPares = Object.entries( personaje ); //para que el objeto se cea en pares de valores.
+console.log( entriesPares )
