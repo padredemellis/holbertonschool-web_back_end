@@ -1,15 +1,11 @@
+/*
+alert('Hola mundo');
+
+let nombre = prompt('¿Cuál es tu nombre?', 'Sin nombre'); //retorna lo que el usuario escribe
 
 
+console.log(` **** ${nombre} ****`);
+*/
 
-alert('Hola Mundo');
-
-
-let nombre = prompt('¿Cuál es tu nombre?');
-console.log( nombre );
-console.log( '****' + nombre + '****' ); // ''
-
-const seleccion = confirm('¿Está seguro de borrar esto?');
-console.log( seleccion );
-
-// console.log( global );
-
+const seleccion = confirm('¿Estas seguro de borrar esto?');
+console.log( seleccion)
