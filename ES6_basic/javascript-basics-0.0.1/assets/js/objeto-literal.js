@@ -32,4 +32,13 @@ delete personaje['edad'];
 console.log(personaje);
 
 const entriesPares = Object.entries( personaje ); //para que el objeto se cea en pares de valores.
-console.log( entriesPares )
+console.log( entriesPares );
+
+Object.freeze(personaje); 
+//congela el objeto como estaba y no lo vas a poder modificar, pero si hay objetos dentro de otro objeto si se podra modificar
+
+const propiedades = Object.getOwnPropertyDescriptor( personaje );
+console.log( {propiedades} );
+
+const valores = Object.values( personaje );
+console.log( valores );
