@@ -23,5 +23,6 @@ export default class Building {
   }
 
   // This method can be empty, as its only purpose is to be overridden
+  // eslint-disable-next-line class-methods-use-this
   evacuationWarningMessage() {}
 }
