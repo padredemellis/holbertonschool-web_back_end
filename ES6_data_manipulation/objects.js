@@ -1,32 +1,32 @@
-/* 
+/*
 Un objeto es una coleccion de propiedades, una propiedad es una asociacion entre una clave y un valor.
 */
 const producto = {
-    nombre: "Tablet",
-    precio: 300,
-    disponible: false,
-}
-//Destructuring (sacar el contenido de un objeto y ponerlo en variables con el nombre de las claves)
-const {nombre} = producto
-console.log(nombre)
+  nombre: 'Tablet',
+  precio: 300,
+  disponible: false,
+};
+// Destructuring (sacar el contenido de un objeto y ponerlo en variables con el nombre de las claves)
+const { nombre } = producto;
+console.log(nombre);
 
 // Colocar dentro de un objeto variables (Object literal Enhacement)
 
-const auntenticado = true
-const usuario = "Juan"
+const auntenticado = true;
+const usuario = 'Juan';
 
 const nuevoObjeto = {
-    auntenticado: auntenticado,
-    usuario: usuario,
-}
+  auntenticado,
+  usuario,
+};
 
-console.log(nuevoObjeto)
+console.log(nuevoObjeto);
 
-//Manipulacion de objetos
-producto.disponible = "true"
+// Manipulacion de objetos
+producto.disponible = 'true';
 
-console.log(producto)
+console.log(producto);
 
-delete producto.precio
+delete producto.precio;
 
-console.log(producto)
+console.log(producto);
