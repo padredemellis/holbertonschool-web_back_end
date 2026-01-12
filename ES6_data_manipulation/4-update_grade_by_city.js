@@ -1,14 +1,10 @@
 export default function updateStudentGradeByCity(students, city, newGrades) {
-  let filtrados = students.filter((student) => {
-    if (student.location === city) {
-      return student;
-    }
-  });
+  const filtrados = students.filter((student) => student.location === city);
 
-  filtrados = filtrados.map((student) => {
+  return filtrados.map((student) => {
     let calificacionEncontrada = null;
 
-    for (let i = 0; i < newGrades.length; i++) {
+    for (let i = 0; i < newGrades.length; i += 1) {
       if (newGrades[i].studentId === student.id) {
         calificacionEncontrada = newGrades[i];
         break;
@@ -30,6 +26,4 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
       grade: 'N/A',
     };
   });
-
-  return filtrados;
 }
