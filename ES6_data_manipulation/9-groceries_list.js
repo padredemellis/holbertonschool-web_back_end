@@ -5,5 +5,5 @@ export default function groceriesList() {
   mapa.set('Pasta', 1);
   mapa.set('Rice', 1);
   mapa.set('Banana', 5);
-  return (mapa);
+  return mapa;
 }
