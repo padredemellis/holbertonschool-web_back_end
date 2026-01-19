@@ -7,7 +7,6 @@ let nombre;
 process.stdin.on("data", (data) => {
   nombre = data.trim();
   console.log(`Your name is: ${nombre}`);
-  process.stdin.pause();
 });
 
 process.stdin.on("end", () => {
